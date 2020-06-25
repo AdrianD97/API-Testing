@@ -1,0 +1,30 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "description": "api testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha tests/g*.spec.js && node node_modules/mocha/bin/_mocha tests/put*.spec.js && node node_modules/mocha/bin/_mocha tests/d*.spec.js && node node_modules/mocha/bin/_mocha tests/post*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianD97/API-Testing.git"
+  },
+  "keywords": [
+    "testing",
+    "mocha"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianD97/API-Testing/issues"
+  },
+  "homepage": "https://github.com/AdrianD97/API-Testing#readme",
+  "dependencies": {
+    "mocha": "^8.0.1",
+    "requester": "^0.1.22"
+  }
+}
